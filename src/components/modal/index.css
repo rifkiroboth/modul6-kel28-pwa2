@@ -1,0 +1,117 @@
+/* Background Overlay */
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999; /* Pastikan modal berada di atas elemen lain */
+}
+
+/* Modal Container */
+.modal {
+    width: 90%; /* Perbesar modal untuk menampilkan lebih banyak data */
+    max-width: 600px; /* Maksimal ukuran lebar modal */
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left; /* Ubah ke kiri untuk data yang lebih panjang */
+    overflow-y: auto; /* Tambahkan scroll jika konten terlalu panjang */
+    max-height: 90vh; /* Batas tinggi modal */
+    z-index: 1000; /* Pastikan modal berada di atas background overlay */
+
+}
+
+/* Gambar Resep */
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover; /* Pastikan gambar terpotong sesuai ukuran */
+}
+
+/* Informasi Utama Resep */
+.modal-info {
+    margin-bottom: 20px;
+}
+
+.modal-info h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2f3640;
+    margin-bottom: 8px;
+}
+
+.modal-info p {
+    font-size: 16px;
+    color: #576574;
+    margin-bottom: 12px;
+}
+
+.modal-info a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.modal-info a:hover {
+    text-decoration: underline;
+}
+
+/* Section Konten Tambahan */
+.modal-section {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #dcdde1;
+}
+
+.modal-section h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2f3640;
+    margin-bottom: 10px;
+}
+
+.modal-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.modal-section ul li {
+    font-size: 14px;
+    color: #718093;
+    margin-bottom: 6px;
+}
+
+/* Tombol Tutup */
+.close-btn {
+    display: block;
+    width: 100%;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.close-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Tersembunyi */
+.hidden {
+    display: none;
+}

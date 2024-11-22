@@ -1,0 +1,78 @@
+/* Container Utama */
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f6fa;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    font-size: 32px;
+    color: #2f3640;
+}
+
+/* Foto Profil dan Informasi */
+.profile-section {
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2f3640;
+}
+
+.profile-bio {
+    font-size: 18px;
+    color: #718093;
+}
+
+.profile-description {
+    font-size: 16px;
+    color: #576574;
+    margin-top: 10px;
+}
+
+/* Tautan Media Sosial */
+.social-media-section {
+    margin-top: 20px;
+}
+
+.social-media-section h3 {
+    font-size: 20px;
+    color: #2f3640;
+    margin-bottom: 15px;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media-link {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
